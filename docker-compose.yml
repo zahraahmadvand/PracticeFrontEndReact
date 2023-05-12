@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  practice-front:
+    build: .
+    container_name: practice-front
+    volumes:
+      - ./myapp:/src
+      - /app/node_modules
+    ports:
+      - "3001:3000"
